@@ -1,0 +1,26 @@
+/* Estilos personalizados para os cards no carrossel */
+.custom-carousel-card {
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+  border: none;
+  width: 80%; /* Largura ajustável do card */
+  border-radius: 10px; /* Cantos arredondados */
+}
+
+.custom-carousel-card .card-body {
+  padding: 1.25rem;
+}
+
+.custom-carousel-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff; /* Cor do título */
+  margin-bottom: 10px;
+}
+
+.custom-carousel-card .card-text {
+  color: #ffffff; /* Cor do texto */
+}
+
+.carousel-item {
+  text-align: center;
+}

@@ -12,6 +12,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient } from '@angular/common/http';
 import { SolarSystemPlanetsComponent } from './pages/solar-system-planets/solar-system-planets.component';
 import { ConfirmationModalComponent } from './components/confirmation-modal/confirmation-modal.component';
+import { CardComponent } from './components/card/card.component';
+import { CardListComponent } from './components/card-list/card-list.component';
+import { NasaEventListComponent } from './pages/nasa-event-list/nasa-event-list.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { ConfirmationModalComponent } from './components/confirmation-modal/conf
     NotFoundComponent,
     AstronautFormComponent,
     SolarSystemPlanetsComponent,
-    ConfirmationModalComponent
+    ConfirmationModalComponent,
+    CardComponent,
+    CardListComponent,
+    NasaEventListComponent
   ],
   imports: [
     BrowserModule,
