@@ -1,0 +1,13 @@
+<section class="container mt-5">
+  <div class="row">
+    <div *ngFor="let card of cards; let i = index" [ngClass]="getCardWidth(i)">
+      <div class="card h-100">
+        <img [src]="card.imgSrc" class="card-img-top" alt="Card Image">
+        <div class="card-body">
+          <h5 class="card-title">{{ card.title }}</h5>
+          <p class="card-text">{{ card.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

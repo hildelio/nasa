@@ -1,0 +1,48 @@
+:host {
+  display: block;
+  width: 85%;
+  max-width: 100%;
+}
+
+.hero-section {
+  background-image: url('../../../assets/images/astronaut-working.webp');
+  background-size: cover; 
+  background-position: center;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  height: 400px;
+  display: flex;
+  color: #00247f; 
+  text-align: center;
+  padding: 0 20px; 
+}
+
+.hero-content {
+  max-width: 80%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 3);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 9);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
