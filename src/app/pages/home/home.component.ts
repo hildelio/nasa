@@ -15,4 +15,8 @@ export class HomeComponent {
 
   exobiologyTitle = 'Exobiology Deputy Branch Chief Melissa Kirven-Brooks';
   exobiologyText = `“… I’ve just seen such tremendous things happen since I’ve been part of the Astrobiology Program, and that’s why I’m pretty confident we’re going to find life elsewhere, because there are just so many brilliant people working on this.” — Melissa Kirven-Brooks, Exobiology Deputy Branch Chief and Future Workforce Lead of the NASA Astrobiology Program, NASA’s Ames Research Center`;
+
+  becomeAnAstronautTitle = 'Become an Astronaut';
+  becomeAnAstronautText = `NASA is hiring astronauts! Do you have what it takes to join the next class of astronauts? Learn more about the basic requirements and qualifications for becoming an astronaut.`;
+  applyButtonText = 'APPLY NOW';
 }

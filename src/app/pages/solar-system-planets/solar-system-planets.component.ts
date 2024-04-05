@@ -6,43 +6,42 @@ import { Component } from '@angular/core';
   styleUrl: './solar-system-planets.component.scss'
 })
 export class SolarSystemPlanetsComponent {
-   planetas = [
+  planetas = [
     {
-      nome: "Mercúrio",
-      descricao: "Mercúrio é o planeta mais próximo do Sol e o menor do sistema solar. Ele não possui atmosfera significativa e sua superfície é coberta por crateras e planícies.",
+      nome: "Mercury",
+      descricao: "Mercury is the closest planet to the Sun and the smallest in the solar system. It lacks a significant atmosphere due to its proximity to the Sun, resulting in extremely high temperatures during the day and low temperatures at night. Its surface is covered with craters and plains.",
       imagem: "../../../assets/images/Mercurio.png"
     },
     {
-      nome: "Vênus",
-      descricao: "Vênus é conhecido como o planeta irmão da Terra devido às suas características semelhantes em tamanho e massa. No entanto, sua atmosfera é extremamente densa e tóxica.",
+      nome: "Venus",
+      descricao: "Venus is known as Earth's sister planet due to its similar size and mass. However, its atmosphere is extremely dense, composed mainly of carbon dioxide, with clouds of sulfuric acid. It is the hottest planet in the solar system due to extreme greenhouse effect.",
       imagem: "../../../assets/images/Venus.png"
     },
     {
-      nome: "Terra",
-      descricao: "A Terra é o único planeta conhecido por abrigar vida. Ela possui uma atmosfera rica em oxigênio e uma variedade de ecossistemas que sustentam uma vasta gama de formas de vida.",
+      nome: "Earth",
+      descricao: "Earth is the only planet known to support life. It has an atmosphere rich in oxygen and a variety of ecosystems that sustain a vast range of life forms. The presence of liquid water on the surface is crucial for the existence of life as we know it.",
       imagem: "../../../assets/images/Terra.png"
     },
     {
-      nome: "Marte",
-      descricao: "Marte é conhecido como o 'Planeta Vermelho' devido à sua superfície avermelhada. Ele possui características que sugerem a presença de água em seu passado distante.",
+      nome: "Mars",
+      descricao: "Mars is known as the 'Red Planet' due to its reddish surface, caused by the presence of iron oxide. Although currently cold and dry, evidence suggests that Mars once had rivers, lakes, and even a primitive ocean, indicating a warmer, wetter past.",
       imagem: "../../../assets/images/Marte.png"
     },
     {
-      nome: "Júpiter",
-      descricao: "Júpiter é o maior planeta do sistema solar e é conhecido por suas faixas de nuvens coloridas e pela Grande Mancha Vermelha, uma tempestade gigante que ocorre há séculos.",
+      nome: "Jupiter",
+      descricao: "Jupiter is the largest planet in the solar system and is known for its colorful cloud bands, formed by powerful atmospheric winds. It has the Great Red Spot, a giant storm that has been occurring for centuries. Jupiter also has a complex system of moons, including Europa, which harbors a potentially habitable subsurface ocean.",
       imagem: "../../../assets/images/Jupiter.png"
     },
     {
-      nome: "Saturno",
-      descricao: "Saturno é famoso por seus impressionantes anéis, compostos principalmente de gelo e rocha. Ele é o segundo maior planeta do sistema solar, após Júpiter.",
+      nome: "Saturn",
+      descricao: "Saturn is famous for its impressive rings, composed mainly of ice and rock. It is the second-largest planet in the solar system and has dozens of moons, including Titan, with a dense atmosphere and hydrocarbon lakes on its surface.",
       imagem: "../../../assets/images/Saturno.png"
     },
     {
-      nome: "Urano",
-      descricao: "Urano é um planeta gasoso gigante que possui um eixo de rotação inclinado de lado. Ele tem uma atmosfera composta principalmente de hidrogênio e hélio.",
+      nome: "Uranus",
+      descricao: "Uranus is a giant gas planet that has a tilted rotation axis, causing it to essentially spin on its side relative to its orbital plane. Its atmosphere is mainly composed of hydrogen, helium, and methane, giving the planet its distinctive blue-green coloration.",
       imagem: "../../../assets/images/Urano.png"
     }
   ];
   
-
 }

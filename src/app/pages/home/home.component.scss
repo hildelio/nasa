@@ -5,8 +5,7 @@
 }
 
 .hero-section {
-  background-image: url('../../../assets/images/astronaut-working.webp');
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
   border-radius: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -14,7 +13,18 @@
   display: flex;
   color: #00247f; 
   text-align: center;
-  padding: 0 20px; 
+  padding: 0 20px;
+}
+
+.hero-section-principal {
+  background-image: url('../../../assets/images/astronaut-working.webp');
+}
+
+.astronaut-hero {
+  align-items: center;
+  background-image: url('../../../assets/images/astronaut.webp');
+  justify-content: center;
+
 }
 
 .hero-content {
@@ -25,13 +35,13 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content p {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 9);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
 }
 
 .btn-primary {

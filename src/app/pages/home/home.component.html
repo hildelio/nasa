@@ -1,8 +1,8 @@
-<section class="hero-section rounded-lg shadow p-5">
+<section class="hero-section rounded-lg shadow p-5 hero-section-principal">
   <div class="hero-content text-light">
     <h1 class="display-4 mb-4">{{ welcomeTitle }}</h1>
     <p class="lead mb-4">{{ welcomeText }}</p>
-    <a href="#" class="btn btn-primary rounded-pill">{{ exploreButtonText }}</a>
+    <a routerLink="solar-system-planets" class="btn btn-primary rounded-pill">{{ exploreButtonText }}</a>
   </div>
 </section>
 <section class="container mt-5">
@@ -18,3 +18,11 @@
   </div>
 </section>
 <app-card-list></app-card-list>
+<section class="hero-section rounded-lg mt-5 p-5 astronaut-hero">
+  <div class="hero-content text-light">
+    <h1 class="display-4 mb-4">{{ becomeAnAstronautTitle }}</h1>
+    <p class="lead mb-4">{{ becomeAnAstronautText }}</p>
+    <a routerLink="astronaut-form" class="btn btn-primary rounded-pill">{{ applyButtonText }}</a>
+  </div>
+</section>
+
