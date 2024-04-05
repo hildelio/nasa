@@ -10,6 +10,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AstronautFormComponent } from './pages/astronaut-form/astronaut-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient } from '@angular/common/http';
+import { SolarSystemPlanetsComponent } from './pages/solar-system-planets/solar-system-planets.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { provideHttpClient } from '@angular/common/http';
     HeaderComponent,
     HomeComponent,
     NotFoundComponent,
-    AstronautFormComponent
+    AstronautFormComponent,
+    SolarSystemPlanetsComponent
   ],
   imports: [
     BrowserModule,

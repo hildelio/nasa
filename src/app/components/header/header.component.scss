@@ -1,0 +1,14 @@
+/* styles.scss */
+.nav-link {
+  transition: color 0.3s ease; 
+}
+
+.nav-link:hover {
+  color: #fff; 
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #fff; 
+}
+
