@@ -18,11 +18,28 @@
   </div>
 </section>
 <app-card-list></app-card-list>
-<section class="hero-section rounded-lg mt-5 p-5 astronaut-hero">
+<section class="hero-section rounded-lg mt-5 mb-5 p-5 astronaut-hero">
   <div class="hero-content text-light">
     <h1 class="display-4 mb-4">{{ becomeAnAstronautTitle }}</h1>
     <p class="lead mb-4">{{ becomeAnAstronautText }}</p>
     <a routerLink="astronaut-form" class="btn btn-primary rounded-pill">{{ applyButtonText }}</a>
   </div>
 </section>
+<section class="card-container container">
+  <div class="row">
+    <div class="col-md-4">
+      <app-card [imgSrc]="cardImage1" [title]="cardTitle1" [description]="cardDescription1"></app-card>
+    </div>
+    <div class="col-md-4">
+      <app-card [imgSrc]="cardImage2" [title]="cardTitle2" [description]="cardDescription2"></app-card>
+    </div>
+    <div class="col-md-4">
+      <app-card [imgSrc]="cardImage3" [title]="cardTitle3" [description]="cardDescription3"></app-card>
+    </div>
+  </div>
+</section>
 
+
+
+
+  

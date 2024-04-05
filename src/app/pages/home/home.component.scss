@@ -56,3 +56,16 @@
   background-color: #0056b3;
   border-color: #0056b3;
 }
+
+.card-container {
+  padding: 20px 0;
+}
+
+.card-container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-container .col-md-4 {
+  padding: 0 10px;
+}
