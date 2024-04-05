@@ -9,6 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class AstronautFormComponent {
   astronautForm: FormGroup | undefined;
+  showConfirmationModal = false;
 
   formBuilder = inject(FormBuilder);
 
@@ -31,9 +32,14 @@ export class AstronautFormComponent {
       const formData = this.astronautForm.value;
       this.http.post("https://reqres.in/api/users", formData).subscribe(response => {
         console.log('Post success:', response);
+        this.showConfirmationModal = true;
       }, error => {
         console.error('Post error:', error);
       });
     }
+  }
+
+  closeModal() {
+    this.showConfirmationModal = false;
   }
 }

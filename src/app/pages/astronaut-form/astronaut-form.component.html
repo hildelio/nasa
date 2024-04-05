@@ -1,47 +1,48 @@
 <form [formGroup]="astronautForm" *ngIf="astronautForm" (ngSubmit)="onSubmit()" class="mt-5">
-  <h2 class="text-light mb-4">Cadastro de Astronauta</h2>
+  <h2 class="text-light mb-4">Astronaut Registration</h2>
   <div class="mb-3">
-    <label for="name" class="form-label text-light">Nome:</label>
+    <label for="name" class="form-label text-light">Name:</label>
     <input type="text" class="form-control" id="name" formControlName="name">
     <div *ngIf="astronautForm.get('name')?.invalid && astronautForm.get('name')?.touched" class="text-danger">
-      Nome é obrigatório.
+      Name is required.
     </div>
   </div>
   <div class="mb-3">
-    <label for="age" class="form-label text-light">Idade:</label>
+    <label for="age" class="form-label text-light">Age:</label>
     <input type="number" class="form-control" id="age" formControlName="age">
     <div *ngIf="astronautForm.get('age')?.invalid && astronautForm.get('age')?.touched" class="text-danger">
-      Idade é obrigatória e deve ser no mínimo 18 anos.
+      Age is required and must be at least 18 years old.
     </div>
   </div>
   <div class="mb-3">
-    <label for="missions" class="form-label text-light">Missões Realizadas:</label>
+    <label for="missions" class="form-label text-light">Missions Completed:</label>
     <input type="text" class="form-control" id="missions" formControlName="missions">
     <div *ngIf="astronautForm.get('missions')?.invalid && astronautForm.get('missions')?.touched" class="text-danger">
-      Missões realizadas é obrigatório.
-    </div>
-    <div class="mb-3">
-      <label for="phone" class="form-label text-light">Telefone:</label>
-      <input type="text" class="form-control" id="phone" formControlName="phone">
-      <div *ngIf="astronautForm.get('phone')?.invalid && astronautForm.get('phone')?.touched" class="text-danger">
-        Número de telefone é obrigatório.
-      </div>
-    </div>
-    <div class="mb-3">
-      <label for="email" class="form-label text-light">Email:</label>
-      <input type="email" class="form-control" id="email" formControlName="email">
-      <div *ngIf="astronautForm.get('email')?.invalid && astronautForm.get('email')?.touched" class="text-danger">
-        Email é obrigatório e deve ser um email válido.
-      </div>
-    </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="acceptTermsHousing" formControlName="acceptTermsHousing">
-      <label class="form-check-label text-light" for="acceptTermsHousing">Li e aceito os termos de moradia da NASA</label>
-    </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="acceptTermsHealth" formControlName="acceptTermsHealth">
-      <label class="form-check-label text-light" for="acceptTermsHealth">Li e aceito os termos de saúde impostos pela NASA</label>
+      Missions completed is required.
     </div>
   </div>
-  <button type="submit" class="btn btn-light" [disabled]="!astronautForm.valid">Enviar Inscrição</button>
+  <div class="mb-3">
+    <label for="phone" class="form-label text-light">Phone:</label>
+    <input type="text" class="form-control" id="phone" formControlName="phone">
+    <div *ngIf="astronautForm.get('phone')?.invalid && astronautForm.get('phone')?.touched" class="text-danger">
+      Phone number is required.
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label text-light">Email:</label>
+    <input type="email" class="form-control" id="email" formControlName="email">
+    <div *ngIf="astronautForm.get('email')?.invalid && astronautForm.get('email')?.touched" class="text-danger">
+      Email is required and must be a valid email address.
+    </div>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="acceptTermsHousing" formControlName="acceptTermsHousing">
+    <label class="form-check-label text-light" for="acceptTermsHousing">I have read and accept NASA's housing terms</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="acceptTermsHealth" formControlName="acceptTermsHealth">
+    <label class="form-check-label text-light" for="acceptTermsHealth">I have read and accept NASA's health terms</label>
+  </div>
+  <button type="submit" class="btn btn-light" [disabled]="!astronautForm.valid">Submit Application</button>
 </form>
+<app-confirmation-modal *ngIf="showConfirmationModal" (closeModal)="closeModal()"></app-confirmation-modal>

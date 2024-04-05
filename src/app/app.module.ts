@@ -11,6 +11,7 @@ import { AstronautFormComponent } from './pages/astronaut-form/astronaut-form.co
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient } from '@angular/common/http';
 import { SolarSystemPlanetsComponent } from './pages/solar-system-planets/solar-system-planets.component';
+import { ConfirmationModalComponent } from './components/confirmation-modal/confirmation-modal.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SolarSystemPlanetsComponent } from './pages/solar-system-planets/solar-
     HomeComponent,
     NotFoundComponent,
     AstronautFormComponent,
-    SolarSystemPlanetsComponent
+    SolarSystemPlanetsComponent,
+    ConfirmationModalComponent
   ],
   imports: [
     BrowserModule,
